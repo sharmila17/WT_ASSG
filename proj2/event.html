@@ -17,9 +17,9 @@
             <img src="https://source.unsplash.com/120x120/?registration" alt="logo">
         </div>
         <ul class="nav-list">
-            <li class="items"><a href="#home">Home</a></li>
-            <li class="items"><a href="#Register">Register</a></li>
-            <li class="items"><a href="#Registerends">Registerends</a></li>
+            <li class="items"><a href="../PRACTICAL ASSG2/event.html " >Home</a></li>
+            <li class="items"><a href="Register" onclick=Register() >Register</a></li>
+            <li class="items"><a href="#Registerends" onclick="Registerends()">Registerends</a></li>
         </ul>
 
     </nav>
@@ -32,57 +32,30 @@
                 amny more singers would be ther for you. </p>
         </div>
         <div class="homeimg">
-            <img src="../proj2/image/img-1.jpg" alt="logo">
+            <img src="../PRACTICAL ASSG2/image/img-1.jpg" alt="logo">
         </div>
     </section>
     <section class="registration">
         <div class="form">
-            <form action=""  onsubmit="return myfun()"></form>
-        
-             <label for="fname">F-Name:</label>
-             <input type="text" name="fname" id="fname" placeholder="Enter your First Name"
-                requiredautofocus="on"><br><br>
-             <span id="message1" style="color:red;"></span>
-        </form>
-
-           
-
-        <form action=""  onsubmit="return myfun()"></form>
-            
-             <label for="lname">L-Name: </label>
-             <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" required><br><br>
-             <span id="message1" style="color:red;"></span>
-    </form>
-
+            <label for="fname">F-Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your First Name"
+                required ><br><br>
+            <label for="lname">L-Name: </label>
+            <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" required><br><br>
             <label for="age">Age:</label>
             <input type="number" name="" id="age" placeholder="Enter your Age"><br><br>
-
-             <form action=""  onsubmit="return myfun()"></form>
-                <label for="p-number">Number:</label>
-                <input type="number" name="" id="p-number" placeholder="Enter your Number"><br><br>
-                <span id="message2" style="color:red;"></span>
-        </form>
-
+            <label for="p-number">Number:</label>
+            <input type="number" name="" id="p-number" placeholder="Enter your Number"><br><br>
             <label for="DOB">Dob:</label>
             <input type="date" name="DOB" id="DOB"><br><br>
-
-            <form action=""  onsubmit="return myfun1()"></form>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="Enter your E-mail" required><br><br>
-                <span id="message" style="color:red;"></span>
-            </form>
-
-            <label for="state">State:</label>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your E-mail" required><br><br>
+            <labelfor="state">State:</label>
             <input type="text" name="" id="state" placeholder="Enter your state"><br><br>
-
             <label for="city">City:</label>
             <input type="text" name="" id="city" placeholder="Enter your city"><br><br>
-           <span id="Message" style="color:red;"></span>
-             
             <label for="p-address">Address:</label>
             <input type="textbox" id="p-address" placeholder="Enter your address"><br><br>
-            <span id="Message" style="color:red;"></span>
-             
             <label for="gender">Gender:</label>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
@@ -91,14 +64,10 @@
             <input type="radio" id="other" name="gender" value="other">
             <label for="other">Other</label>
             <div class="button">
-                <button type="submit" onsubmit="return myfun()" onsubmit="return myfun1() "onsubmit="return myfun2()">Submit</button>
+                <button type="submit"  onclick="tables()">Submit</button>
                 <button type="reset">Reset</button>
 
             </div>
-
-
-
-
         </div>
     </section>
 
@@ -106,6 +75,7 @@
         <div class="table-item">
             <table>
                 <tr>
+                    <th>Filled On</th>
                     <th>F-name</th>
                     <th>L-name</th>
                     <th>Age</th>
@@ -117,25 +87,12 @@
                     <th>Address</th>
                     <th>Gender</th>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-
             </table>
         </div>
     </section>
 
-      <link rel="stylesheet" href="script.js">
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    
 </body>
 
 </html>
