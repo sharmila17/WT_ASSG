@@ -1,55 +1,90 @@
-function myfun() {
-    var a = document.getElementById("p-number").value;
-    if (a = " ") {
-        document.getElementById("message2").innerHTML = "**mobile no can't be of 0 digit";
-        return false;
-    }
-    if (isNaN(a)) {
+function Register() {
 
-        document.getElementById("message2").innerHTML = "**Enter only Numeric value";
-        return false;
-    }
-    if (a.length < 10) {
-        document.getElementById("message2").innerHTML = "**mobile no must be of 10 digit";
-        return false;
-    }
-    if (a.length > 10) {
-        document.getElementById("message2").innerHTML = "**mobile no can't be of > 10 digit";
-        return false;
-    }
-}
-function Myfun1() {
-    var a = document.Myform.Email.value;
-    if (a.indexOf('@') <= 0) {
-        document.getElementById("Message").innerHTML = "** Invalid @ position";
-        return false;
-    }
-
-    if ((a.charAt(a.length - 4) != '.') && (a.charAt(a.length - 3) != '.')) {
-        document.getElementById("Message").innerHTML = "**  Invalid @ position at 3";
-        return false;
-    }
-}
-function Myfun2()
-	{
-	var a=document.getElementById("user_name").value;
-	if(a=="")
-	{
-	  document.getElementById("Message1").innerHTML="** Please fill user name";
-	  return false;
-	}
-	if(a.length<3)
-	{
-	  document.getElementById("Message1").innerHTML="** user name must be 3 characters";
-	  return false;
-	}
-	if(a.length>20)
-	{
-	  document.getElementById("Message1").innerHTML="** user name must b/w 3 to 20 characters";
-	  return false;
-	}
-    }
+    let reg = document.getElementById("form");   
+      
+      reg.style.display = "block";
+      
+  }
+      
+  function Registerends() {
+    var tableItem = document.getElementById("table-item");
+    var form = document.getElementById("form");
+    // var i=document.getElementById("imk");
+         
     
-
-
-
+     tableItem.style.display = "block";
+  
+     form.style.display = "none";
+    //  i.style.display = "none";
+   } 
+   
+  
+   
+  
+  
+   var today = new Date();
+   var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();   
+   var dateTime = date+' '+time;
+  
+  
+  
+  
+  
+  function tables() {                                  
+  
+  
+   
+      alert("Form Submitted :)")
+      var newRow = table.insertRow(table-list.length),          
+        cell1 = newRow.insertCell(0),
+        cell2 = newRow.insertCell(1),
+        cell3 = newRow.insertCell(2),
+        cell4 = newRow.insertCell(3),
+        cell5 = newRow.insertCell(4);
+        cell6 = newRow.insertCell(5);
+        cell7 = newRow.insertCell(6);
+        cell8 = newRow.insertCell(7);
+        cell9 = newRow.insertCell(8);
+        cell10 = newRow.insertCell(9);
+        cell11 = newRow.insertCell(10);
+       
+       
+  
+        fname = document.getElementById("fname").value,
+        lname= document.getElementById("lname").value,
+        age= document.getElementById("age").value
+        pnumber= document.getElementById("p-number").value
+        DOB= document.getElementById("DOB").value
+        email= document.getElementById("email").value
+        state= document.getElementById("state").value
+        city= document.getElementById("city").value
+        paddress= document.getElementById("p-address").value
+        gender= document.getElementById("gender").value
+  
+     
+  
+  
+     
+  
+      cell1.innerHTML = dateTime;                                 
+      cell2.innerHTML = fname;
+      cell3.innerHTML = lname;
+      cell4.innerHTML = age;
+      cell5.innerHTML =  pnumber;
+      cell6.innerHTML = DOB;
+      cell7.innerHTML =  email;
+      cell8.innerHTML = state;
+      cell9.innerHTML =  city;
+      cell10.innerHTML =  paddress;
+      cell11.innerHTML =  gender;
+     
+      
+      document.getElementById("form").reset();
+                                             
+                     
+    
+  
+  };
+   
+  
